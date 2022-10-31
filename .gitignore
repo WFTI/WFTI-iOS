@@ -1,0 +1,4 @@
+# Ignore From Xcode
+#*.md
+README.md
+*.xcuserstate

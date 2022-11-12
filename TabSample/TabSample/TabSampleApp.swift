@@ -12,6 +12,15 @@ struct TabSampleApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+//            ZStack {
+//                //WebView
+//                WebView()
+//
+//                // NativeView
+//
+//
+//            }
+            
         }
     }
 }

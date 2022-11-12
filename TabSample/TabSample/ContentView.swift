@@ -8,36 +8,58 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var showModal = false //상태
+    
+//    @State var showWebView = true
+    @State var hideWebView = false
+    @ObservedObject var webViewModel = WebViewModel()
+
     
     var body: some View {
-        TabView {
-            //First Tab
-            FirstTab(actInfoVM: MyActInfoViewModel.init(userId: "123", month: "202210"))
-                .tabItem {
-                    Image(systemName: "house.fill")
-                }
+        ZStack {
+            // TabView
+            TabView {
+                //First Tab
+                FirstTab(actInfoVM: MyActInfoViewModel.init(userId: "123", month: "202210"))
+                    .tabItem {
+                        Image(systemName: "house.fill")
+                    }
 
-            Text("Sec Tab")
-                .tabItem {
-                    Image(systemName: "magnifyingglass")
-                }
-            
-            Text("Third Tab")
-                .tabItem {
-                    Image(systemName: "ellipsis")
-                }
-            
-            
-            // Test Tab
-            TestTab()
-                .tabItem {
-                    Image(systemName: "testtube.2")
-                    Text("Test Tab")
-                }
+                Text("Sec Tab")
+                    .tabItem {
+                        Image(systemName: "magnifyingglass")
+                    }
+                
+                Text("Third Tab")
+                    .tabItem {
+                        Image(systemName: "ellipsis")
+                    }
+                
+                
+                // Test Tab
+                TestTab()
+                    .tabItem {
+                        Image(systemName: "testtube.2")
+                        Text("Test Tab")
+                    }
 
 
+            }
+            
+            
+            // WebView
+            if !hideWebView {
+                WebView(webViewModel: webViewModel)
+                    .onReceive(self.webViewModel.foo) {  foo  in
+                        print(foo)
+//                        hideWebView.toggle()
+                        hideWebView = foo
+                    
+                    }
+            }
+            
+            
         }
+
     }
 }
 

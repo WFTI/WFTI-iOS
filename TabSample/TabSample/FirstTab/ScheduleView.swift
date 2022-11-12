@@ -128,10 +128,10 @@ class ActInfoViewModel: ObservableObject {
         // requset 구문추가
         
         // Dummy Data
-        users.append(User.init(userId: "1", name: "오스철1"))
-        users.append(User.init(userId: "2", name: "오스철2"))
-        users.append(User.init(userId: "3", name: "오스철3"))
-        users.append(User.init(userId: "4", name: "오스철4"))
+        users.append(User.init(userId: "1", name: "오승철1"))
+        users.append(User.init(userId: "2", name: "오승철2"))
+        users.append(User.init(userId: "3", name: "오승철3"))
+        users.append(User.init(userId: "4", name: "오승철4"))
     }
     
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE8C8A85291802F400B8052C /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FE8C8A84291802F400B8052C /* index.html */; };
+		FE8C8A872918030C00B8052C /* WebMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8C8A862918030C00B8052C /* WebMessage.swift */; };
+		FE8C8A892918033100B8052C /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8C8A882918033100B8052C /* WebView.swift */; };
 		FE9F2A33290C038900FA6F88 /* TabSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F2A32290C038900FA6F88 /* TabSampleApp.swift */; };
 		FE9F2A35290C038900FA6F88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F2A34290C038900FA6F88 /* ContentView.swift */; };
 		FE9F2A37290C038B00FA6F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE9F2A36290C038B00FA6F88 /* Assets.xcassets */; };
@@ -21,9 +24,13 @@
 		FEA7FB80290D354100EA73E5 /* FirebaseManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7FB7F290D354100EA73E5 /* FirebaseManger.swift */; };
 		FEA7FB82290D36C000EA73E5 /* TestTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7FB81290D36C000EA73E5 /* TestTab.swift */; };
 		FEA7FB84290D3B6500EA73E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEA7FB83290D3B6500EA73E5 /* GoogleService-Info.plist */; };
+		FEB1EDBB291AAB6400E0E6CF /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB1EDBA291AAB6400E0E6CF /* WebViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE8C8A84291802F400B8052C /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		FE8C8A862918030C00B8052C /* WebMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebMessage.swift; sourceTree = "<group>"; };
+		FE8C8A882918033100B8052C /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		FE9F2A2F290C038900FA6F88 /* TabSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE9F2A32290C038900FA6F88 /* TabSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSampleApp.swift; sourceTree = "<group>"; };
 		FE9F2A34290C038900FA6F88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +43,7 @@
 		FEA7FB7F290D354100EA73E5 /* FirebaseManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManger.swift; sourceTree = "<group>"; };
 		FEA7FB81290D36C000EA73E5 /* TestTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTab.swift; sourceTree = "<group>"; };
 		FEA7FB83290D3B6500EA73E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FEB1EDBA291AAB6400E0E6CF /* WebViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE8C8A83291802E100B8052C /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				FE8C8A84291802F400B8052C /* index.html */,
+				FE8C8A862918030C00B8052C /* WebMessage.swift */,
+				FE8C8A882918033100B8052C /* WebView.swift */,
+				FEB1EDBA291AAB6400E0E6CF /* WebViewModel.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 		FE9F2A26290C038900FA6F88 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				FEA7FB83290D3B6500EA73E5 /* GoogleService-Info.plist */,
+				FE8C8A83291802E100B8052C /* WebView */,
 				FEA7FB71290D000900EA73E5 /* FirstTab */,
 				FEA7FB6B290CF3E000EA73E5 /* Utils */,
 				FE9F2A32290C038900FA6F88 /* TabSampleApp.swift */,
@@ -185,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE9F2A3A290C038B00FA6F88 /* Preview Assets.xcassets in Resources */,
+				FE8C8A85291802F400B8052C /* index.html in Resources */,
 				FE9F2A37290C038B00FA6F88 /* Assets.xcassets in Resources */,
 				FEA7FB84290D3B6500EA73E5 /* GoogleService-Info.plist in Resources */,
 			);
@@ -198,13 +219,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE9F2A41290C0A2D00FA6F88 /* FirstTab.swift in Sources */,
+				FE8C8A892918033100B8052C /* WebView.swift in Sources */,
 				FEA7FB70290CF7FB00EA73E5 /* Date.swift in Sources */,
 				FEA7FB80290D354100EA73E5 /* FirebaseManger.swift in Sources */,
 				FE9F2A35290C038900FA6F88 /* ContentView.swift in Sources */,
 				FEA7FB6E290CF41900EA73E5 /* String.swift in Sources */,
 				FE9F2A33290C038900FA6F88 /* TabSampleApp.swift in Sources */,
+				FEB1EDBB291AAB6400E0E6CF /* WebViewModel.swift in Sources */,
 				FEA7FB75290D088E00EA73E5 /* ScheduleView.swift in Sources */,
 				FEA7FB82290D36C000EA73E5 /* TestTab.swift in Sources */,
+				FE8C8A872918030C00B8052C /* WebMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

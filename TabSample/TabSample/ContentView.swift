@@ -12,6 +12,7 @@ struct ContentView: View {
 //    @State var showWebView = true
     @State var hideWebView = false
     @ObservedObject var webViewModel = WebViewModel()
+    @State var hideMainClubView = true
 
     
     var body: some View {
@@ -23,8 +24,10 @@ struct ContentView: View {
                     .tabItem {
                         Image(systemName: "house.fill")
                     }
-
-                Text("Sec Tab")
+                
+                
+                //Second Tab
+                SecondTab(webViewModel: webViewModel, url: "search", isInnerHTML: true)
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                     }
@@ -36,11 +39,11 @@ struct ContentView: View {
                 
                 
                 // Test Tab
-                TestTab()
-                    .tabItem {
-                        Image(systemName: "testtube.2")
-                        Text("Test Tab")
-                    }
+//                TestTab()
+//                    .tabItem {
+//                        Image(systemName: "testtube.2")
+//                        Text("Test Tab")
+//                    }
 
 
             }
@@ -48,12 +51,21 @@ struct ContentView: View {
             
             // WebView
             if !hideWebView {
-                WebView(webViewModel: webViewModel)
+                WebView(webViewModel: webViewModel, url: "index", isInnerHTML: true)
                     .onReceive(self.webViewModel.foo) {  foo  in
                         print(foo)
 //                        hideWebView.toggle()
                         hideWebView = foo
                     
+                    }
+            }
+            
+            // MainClubView
+            if !hideMainClubView {
+                MainClubView()
+                    .onReceive(self.webViewModel.bar) { bar in
+                        print(bar)
+                        hideMainClubView = bar
                     }
             }
             

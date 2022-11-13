@@ -60,12 +60,19 @@ struct FirstTab: View {
     var body: some View {
         NavigationView {
             VStack{
-                DatePicker(
-                        "Start Date",
-                        selection: $date,
-                        displayedComponents: [.date]
-                    )
-                    .datePickerStyle(.graphical)
+                
+                ZStack {
+                    
+                    DatePicker(
+                            "Start Date",
+                            selection: $date,
+                            displayedComponents: [.date]
+                        )
+                        .datePickerStyle(.graphical)
+                        
+
+                }
+                
                 
                 List {
                     

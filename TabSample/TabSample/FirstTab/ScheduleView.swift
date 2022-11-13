@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ScheduleView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-
+    
     @ObservedObject var actInfoViewModel:ActInfoViewModel
     
     var body: some View {
@@ -48,7 +48,7 @@ struct ScheduleView: View {
                 }
                 .frame(height: 100)
                 
-
+                
                 HStack {
                     VStack (alignment: .leading, spacing: 10){
                         Text("참여자")
@@ -59,7 +59,7 @@ struct ScheduleView: View {
                         ForEach(actInfoViewModel.users) { user in
                             RowParticipant(user: user)
                         }
-
+                        
                     }
                     .padding()
                     
@@ -67,21 +67,21 @@ struct ScheduleView: View {
                     
                 }
                 Spacer()
-
-
+                
+                
             }
-                    .navigationBarHidden(true)
+            .navigationBarHidden(true)
             .overlay(alignment: .bottom) {
                 NavigationLink {
                     Text("duummy")
                 } label: {
                     ButtonParticipate
                 }
-
+                
             }
-
+            
         }
-
+        
     }
     
     var ButtonParticipate:some View {
@@ -97,7 +97,7 @@ struct ScheduleView: View {
         .background(Color.blue)
         .cornerRadius(32)
         .padding(.horizontal)
-
+        
     }
 }
 
@@ -138,16 +138,16 @@ class ActInfoViewModel: ObservableObject {
 
 struct RowParticipant: View {
     let user: User
-
+    
     var body: some View {
         
         HStack {
-          Image(systemName: "person.fill")
+            Image(systemName: "person.fill")
             Text("오승철")
         }
     }
     
-
+    
 }
 
 struct ScheduleView_Previews: PreviewProvider {

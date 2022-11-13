@@ -8,17 +8,18 @@
 import SwiftUI
 
 struct ClubViewSecondTab: View {
+    
+
+    
+    
     var body: some View {
-        VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            Spacer()
-        }
+        Text("SecondView")
         
     }
 }
 
-struct ClubViewSecondTab_Previews: PreviewProvider {
-    static var previews: some View {
-        ClubViewSecondTab()
-    }
-}
+//struct ClubViewSecondTab_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ClubViewSecondTab()
+//    }
+//}

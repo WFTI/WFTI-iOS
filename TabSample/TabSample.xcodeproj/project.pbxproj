@@ -51,7 +51,6 @@
 		FEA7FB7F290D354100EA73E5 /* FirebaseManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManger.swift; sourceTree = "<group>"; };
 		FEA7FB81290D36C000EA73E5 /* TestTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTab.swift; sourceTree = "<group>"; };
 		FEA7FB83290D3B6500EA73E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FEA94C632920BCC30098B0AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FEB1EDBA291AAB6400E0E6CF /* WebViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
 		FEB522AD291FE57A005E0697 /* search.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = search.html; sourceTree = "<group>"; };
 		FEB522B0291FE88F005E0697 /* SecondTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTab.swift; sourceTree = "<group>"; };
@@ -107,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				FE5C49CF2920C191001F5A0C /* Launch Screen.storyboard */,
-				FEA94C632920BCC30098B0AB /* Info.plist */,
 				FEA94C5E2920BBA70098B0AB /* Sample_Delete */,
 				FEA7FB83290D3B6500EA73E5 /* GoogleService-Info.plist */,
 				FE8C8A83291802E100B8052C /* WebView */,
@@ -414,7 +412,6 @@
 				DEVELOPMENT_TEAM = KL5WJHP8JY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TabSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
@@ -444,7 +441,6 @@
 				DEVELOPMENT_TEAM = KL5WJHP8JY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TabSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";

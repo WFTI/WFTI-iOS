@@ -21,10 +21,12 @@ struct MainClubView: View {
                     Image(systemName: "lessthan")
                         .foregroundColor(.black)
                         .frame(width:30, height: 30)
+                        
                     
                 }
                 
                 Text("W.F.T.I")
+                    .bold()
                 
                 Spacer()
             }

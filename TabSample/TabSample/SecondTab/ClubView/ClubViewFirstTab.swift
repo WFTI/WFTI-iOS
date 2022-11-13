@@ -15,25 +15,60 @@ struct ClubViewFirstTab: View {
                 Image("AppLogo")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 200, height: 200)
+                    .frame(width: UIScreen.main.bounds.width, height: 200)
+                    .border(.gray)
                     
                    
             }
-            
-            HStack(alignment: .top) {
-                Text("""
-                     🔥우리FIS 18기 2022 CoP🔥 \
-                     
-                       
-                       2주마다 작업 분량 점검 & 공유 \
-                       AI, BackEnd, FrontEnd, Mobile 등 다양한 분야 경험가능 \
-                       
-                     
-                       동기끼리 편하게!
-                     """
-                )
-                Spacer()
+            VStack {
+                
+                
+                // Title
+                HStack(alignment: .top) {
+//                    Text("""
+//                         🔥우리FIS 18기 2022 CoP🔥 \
+//
+//
+//                           2주마다 작업 분량 점검 & 공유 \
+//                           AI, BackEnd, FrontEnd, Mobile 등 다양한 분야 경험가능 \
+//
+//
+//                           동기끼리 편하게!
+//                         """
+//                    )
+                    Text("🔥우리FIS 18기 2022 CoP🔥")
+                        .padding(.leading)
+                        .font(Font.body.bold())
+                            
+                    
+                    
+                    Spacer()
+                }
+                
+                // Content
+                
+                HStack(alignment: .top) {
+
+                    Text("""
+                           2주마다 작업 분량 점검 & 공유 \
+                           AI, BackEnd, FrontEnd, Mobile 등 다양한 분야 경험가능 \
+
+
+                           동기끼리 편하게!
+                         """
+                    )
+                    .padding(.leading)
+                    .padding(.top)
+                        
+                            
+                    
+                    
+                    Spacer()
+                }
+                
+                
             }
+
             
             HStack {
                 Spacer()

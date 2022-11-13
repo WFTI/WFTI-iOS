@@ -30,7 +30,7 @@ struct ScheduleView: View {
                     }
                     
                     HStack(alignment: .center) {
-                        Text("10월 01일 월요일")
+                        Text("10월 01일 토요일")
                     }
                 }
                 
@@ -128,10 +128,10 @@ class ActInfoViewModel: ObservableObject {
         // requset 구문추가
         
         // Dummy Data
-        users.append(User.init(userId: "1", name: "오승철1"))
-        users.append(User.init(userId: "2", name: "오승철2"))
-        users.append(User.init(userId: "3", name: "오승철3"))
-        users.append(User.init(userId: "4", name: "오승철4"))
+        users.append(User.init(userId: "1", name: "오승철"))
+        users.append(User.init(userId: "2", name: "정찬웅"))
+        users.append(User.init(userId: "3", name: "정수진"))
+        users.append(User.init(userId: "4", name: "최은정"))
     }
     
 }
@@ -139,11 +139,12 @@ class ActInfoViewModel: ObservableObject {
 struct RowParticipant: View {
     let user: User
     
+    
     var body: some View {
         
         HStack {
             Image(systemName: "person.fill")
-            Text("오승철")
+            Text(user.name)
         }
     }
     

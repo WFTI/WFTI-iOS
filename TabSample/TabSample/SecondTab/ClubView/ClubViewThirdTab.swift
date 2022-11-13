@@ -8,13 +8,34 @@
 import SwiftUI
 
 struct ClubViewThirdTab: View {
+    
+    @ObservedObject var actInfoViewModel:ActInfoViewModel = ActInfoViewModel(actId: "1")
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                VStack (alignment: .leading, spacing: 10){
+                    Text("참여자")
+                        .bold()
+                        .font(.system(size: 30))
+                    
+                    
+                    ForEach(actInfoViewModel.users) { user in
+                        RowParticipant(user: user)
+                    }
+                    
+                }
+                .padding()
+                
+                Spacer()
+                
+            }
+        }
     }
 }
 
-struct ClubViewThirdTab_Previews: PreviewProvider {
-    static var previews: some View {
-        ClubViewThirdTab()
-    }
-}
+//struct ClubViewThirdTab_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ClubViewThirdTab()
+//    }
+//}
